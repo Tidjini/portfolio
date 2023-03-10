@@ -15,7 +15,7 @@ describe("Navbar", () => {
 
   it("renders logo as img (#logo)", () => {
     render(<Navbar />);
-    expect(container.querySelector("header>img[id='logo']")).not.toBeNull();
+    expect(container.querySelector("header>a>img[id='logo']")).not.toBeNull();
   });
 
   it("renders multiple nav element in an ul", () => {

@@ -24,20 +24,36 @@ body {
 }
 
 .nav-item {
-  height: 34px;
+  position: relative;
+  width: auto;
   opacity: 0.8;
-}
-.nav-item > a {
+  cursor: pointer;
   color: white;
   text-decoration: none;
+  padding-bottom: 10px;
 }
 
+.nav-item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  border-bottom: 2px solid white;
+  transition: width 0.6s ease;
+  width: 0;
+  opacity: 0.8;
+}
 .nav-item:hover {
   opacity: 1;
 }
+
+.nav-item:hover::before {
+  width: 100%;
+}
 .nav-item.active {
   opacity: 1;
-  border-bottom: 2px solid wheat;
+  border-bottom: 2px solid white;
 }
 .green {
   color: #06d6a0;

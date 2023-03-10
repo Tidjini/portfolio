@@ -4,27 +4,33 @@ export default function Navbar() {
   return (
     <header className="flex-center">
       <div className="header-section">
-        <img id="logo" src="assets/tidjini.messaoudi.me.png" />
+        <a href="#">
+          <img
+            id="logo"
+            src="assets/tidjini.messaoudi.me.png"
+            alt="Tidjini Messaoudi"
+          />
+        </a>
       </div>
       <nav className="header-section">
         <ul className="flex-center">
-          <li className="nav-item active">
-            <a href="#about">
+          <li>
+            <a href="#about" className="nav-item active">
               <span className="green">01.</span> About
             </a>
           </li>
-          <li className="nav-item">
-            <a href="#projects">
+          <li>
+            <a href="#projects" className="nav-item">
               <span className="green">02.</span> Projects
             </a>
           </li>
-          <li className="nav-item">
-            <a href="#cv">
+          <li>
+            <a href="#cv" className="nav-item">
               <span className="green">03.</span> Cv
             </a>
           </li>
-          <li className="nav-item">
-            <a href="#contacts">
+          <li>
+            <a href="#contacts" className="nav-item">
               <span className="green">04.</span> Contacts
             </a>
           </li>
