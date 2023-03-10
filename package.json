@@ -1,0 +1,8 @@
+{
+  "name": "Portfolio",
+  "version": "1.0.0",
+  "description": "Tidjini Portfolio",
+  "main": "index.js",
+  "author": "Tidjini MESSAOUDI",
+  "license": "MIT"
+}
