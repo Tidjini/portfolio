@@ -1,7 +1,24 @@
 * {
   box-sizing: border-box;
+  list-style: none;
 }
 body {
   margin: 0;
   background-color: darkslategrey;
+  margin: 20px;
+}
+
+.flex-center {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-section {
+  width: 50%;
+}
+
+#logo {
+  max-width: 180px;
 }

@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import ReactTestUtils, { act } from "react-dom/test-utils";
 
-import Navbar from "../src/Navbar";
+import Navbar from "../src/Navbar.jsx";
 
 describe("Navbar", () => {
   let container;
