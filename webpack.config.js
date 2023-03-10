@@ -1,5 +1,6 @@
 const path = require("path");
 const webpack = require("webpack");
+const CopyWebpackPlugin = require("copy-webpack-plugin");
 
 module.exports = {
   mode: "development",
@@ -16,5 +17,14 @@ module.exports = {
         },
       },
     ],
+  },
+  plugins: [
+    new CopyWebpackPlugin({
+      patterns: [{ from: "public", to: "." }],
+    }),
+  ],
+  output: {
+    filename: "main.js",
+    path: path.resolve(__dirname, "build"),
   },
 };

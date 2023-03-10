@@ -3,7 +3,7 @@ import React from "react";
 export default function Navbar() {
   return (
     <header>
-      <img id="logo" src="../assets/tidjini.messaoudi.me.png" />
+      <img id="logo" src="assets/tidjini.messaoudi.me.png" />
       <nav>
         <ul>
           <li>01. About</li>
