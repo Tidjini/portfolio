@@ -1,6 +1,4 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-
-ReactDOM.createRoot(document.getElementById("root")).render(
-  <div>index.js</div>
-);
+import Navbar from "./Navbar";
+ReactDOM.createRoot(document.getElementById("root")).render(<Navbar />);
