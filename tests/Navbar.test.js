@@ -18,9 +18,9 @@ describe("Navbar", () => {
     expect(container.querySelector("header>img[id='logo']")).not.toBeNull();
   });
 
-  //   it("renders multiple appointments in an ol element", () => {
-  //     render(<AppointmentsDayView appointments={appointments} />);
-  //     expect(container.querySelector("ol")).not.toBeNull();
-  //     expect(container.querySelector("ol").children).toHaveLength(2);
-  //   });
+  it("renders multiple nav element in an ul", () => {
+    render(<Navbar />);
+    expect(container.querySelector("ul")).not.toBeNull();
+    expect(container.querySelector("ul").children).toHaveLength(4);
+  });
 });
