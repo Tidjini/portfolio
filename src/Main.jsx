@@ -9,7 +9,7 @@ export default function Main() {
         I am <span className="green">Tidjini</span>,
       </h1>
       <h1>Fullstack Developer</h1>
-      <p className="tagline">
+      <p className="description tagline">
         Currently locatated in Algeria, I love building{" "}
         <span className="green">interactive</span>, digital experiences on the
         web, mobile, and desktop.
