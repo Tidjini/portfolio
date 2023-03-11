@@ -1,4 +1,5 @@
 import React from "react";
+import ScrollIndicator from "./ScrollIndicator";
 
 export default function Main() {
   return (
@@ -14,6 +15,7 @@ export default function Main() {
         web, mobile, and desktop.
       </p>
       <button>let's get in touch!</button>
+      <ScrollIndicator />
     </section>
   );
 }
