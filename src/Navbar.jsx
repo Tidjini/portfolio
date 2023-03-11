@@ -4,12 +4,9 @@ export default function Navbar() {
   return (
     <header className="flex-center">
       <div className="header-section">
-        <a href="#">
-          <img
-            id="logo"
-            src="assets/tidjini.messaoudi.me.png"
-            alt="Tidjini Messaoudi"
-          />
+        <a href="#" id="logo">
+          <span className="green">ti</span>djini.messaou
+          <span className="green">di</span>.com
         </a>
       </div>
       <nav className="header-section">
