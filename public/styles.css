@@ -205,26 +205,38 @@ button:hover::before {
   z-index: 999;
 }
 
-.arrow-down {
-  display: inline-block;
+.arrow-container {
   position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation: arrowDown 1s infinite;
+  animation-timing-function: ease-in-out;
+}
+.arrow-down {
   width: 24px;
   height: 24px;
   border-bottom: 2px solid white;
   border-right: 2px solid white;
+  border-radius: 2px;
   transform: rotate(45deg);
-  animation: arrowDown 1s infinite;
-  animation-timing-function: ease-in-out;
 }
-
+.arrow-down-mini {
+  width: 12px;
+  height: 12px;
+  border-bottom: 1px solid #808184;
+  border-right: 1px solid #808184;
+  border-radius: 2px;
+  transform: rotate(45deg);
+}
 @keyframes arrowDown {
   0% {
-    transform: translate(0, 0) rotate(45deg);
+    transform: translate(0, 0);
   }
   50% {
-    transform: translate(0, 12px) rotate(45deg);
+    transform: translate(0, 12px);
   }
   100% {
-    transform: translate(0, 0) rotate(45deg);
+    transform: translate(0, 0);
   }
 }
