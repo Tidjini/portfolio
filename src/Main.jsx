@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Main() {
   return (
-    <section>
+    <section className="main">
       <h1>Hello,</h1>
       <h1>
         I am <span className="green">Tidjini</span>,
