@@ -13,9 +13,9 @@ describe("Navbar", () => {
   const render = (component) =>
     act(() => ReactDOM.createRoot(container).render(component));
 
-  it("renders logo as img (#logo)", () => {
+  it("renders logo as a element (#logo)", () => {
     render(<Navbar />);
-    expect(container.querySelector("header>a>img[id='logo']")).not.toBeNull();
+    expect(container.querySelector("header>a[id='logo']")).not.toBeNull();
   });
 
   it("renders multiple nav element in an ul", () => {
