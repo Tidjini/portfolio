@@ -1,6 +1,8 @@
 import React from "react";
 import Navbar from "./Navbar.jsx";
 import Main from "./Main.jsx";
+import ScrollIndicator from "./ScrollIndicator.jsx";
+import Skills from "./Skills.jsx";
 
 export default function App() {
   return (
@@ -12,6 +14,8 @@ export default function App() {
       </div>
       <Navbar />
       <Main />
+      <ScrollIndicator />
+      <Skills />
     </div>
   );
 }
