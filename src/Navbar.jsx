@@ -94,7 +94,7 @@ export default function Navbar() {
               <span className="green">03.</span> Contacts
             </a>
           </MenuItem>
-          <MenuItem>
+          <MenuItem onClick={handleClose}>
             <a href="#cv" className="download">
               download CV{" "}
               <span className="open-box">

@@ -14,8 +14,11 @@ export default function App() {
         <div className="wave -three"></div>
       </div>
       <Navbar />
-      {/* <Main />
+      <Main />
       <Skills />
+      <WhatIdo />
+      {/* 
+      
       <WhatIdo />
       <Tools /> */}
     </div>
