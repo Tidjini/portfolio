@@ -39,6 +39,59 @@ body {
   align-items: center;
 }
 
+.download {
+  
+  position: relative;
+  display: flex;
+  align-items: center;
+  color: white;
+  text-decoration: none;
+  background-color: #80818450;
+  border: 1px solid white;
+  border-radius: 5px;
+  padding: 7px 15px;
+  text-transform: uppercase;
+  
+}
+
+.download::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background-color: black;
+  transition: width 0.6s ease;
+  width: 0;
+  color: white;
+  z-index: -1;
+}
+
+.download:hover::before {
+  width: 100%;
+}
+
+.open-box{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 12px;
+  height: 14px;
+  border-bottom: 1.5px solid white;
+  margin-left: 8px;
+  margin-top: -5px;
+  
+}
+.arrow {
+  display: block;
+  width: 6px;
+  height: 6px;
+  border-bottom: 1px solid white;
+  border-right: 1px solid white;
+  transform: rotate(45deg);
+}
+
 header {
   max-width: 1100px;
   margin: 10px auto;

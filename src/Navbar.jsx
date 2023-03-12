@@ -21,14 +21,18 @@ export default function Navbar() {
               <span className="green">02.</span> Projects
             </a>
           </li>
+
           <li>
-            <a href="#cv" className="nav-item">
-              <span className="green">03.</span> Cv
+            <a href="#contacts" className="nav-item">
+              <span className="green">03.</span> Contacts
             </a>
           </li>
           <li>
-            <a href="#contacts" className="nav-item">
-              <span className="green">04.</span> Contacts
+            <a href="#cv" className="download">
+              download CV{" "}
+              <span className="open-box">
+                <span className="arrow"></span>
+              </span>
             </a>
           </li>
         </ul>
