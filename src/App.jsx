@@ -17,10 +17,10 @@ export default function App() {
       <Main />
       <Skills />
       <WhatIdo />
+      <Tools />
       {/* 
       
-      <WhatIdo />
-      <Tools /> */}
+       */}
     </div>
   );
 }

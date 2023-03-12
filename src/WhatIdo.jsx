@@ -34,6 +34,10 @@ export default function WhatIdo() {
       <Grid
         container
         spacing={2}
+        style={{
+          marginTop: -70,
+          padding: 0,
+        }}
         justifyContent={breakPoints.includes(type) ? "flex-start" : "center"}
       >
         <Grid item {...props}>

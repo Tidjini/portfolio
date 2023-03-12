@@ -325,9 +325,10 @@ button:hover::before {
 .shadow-title{
   position: relative;
   width: fit-content;
-  margin: 0 auto;
   text-align: center;
   text-transform: capitalize;
+  margin: 0 auto;
+
 }
 
 .shadow-title .shadow{
@@ -341,12 +342,17 @@ button:hover::before {
   top: 25%;
   width: 100%;
   text-align: center;
+
 }
 
 /**SHADOW TITLE**/
 
 /**WHAT I DO ELEMENTS**/
 
+.wid-contianer{
+  padding: 0px; 
+  margin-top: -70px;
+}
 .wid-element{
   position: relative;
   display: flex;

@@ -21,7 +21,8 @@ function ToolsElement({ title, img }) {
 export default function Tools() {
   return (
     <div>
-      <ShadowTitle title="Programming" />
+      <ShadowTitle title="Coding" />
+
       <div
         className="tools-container"
         style={{

@@ -11,8 +11,8 @@ export default function Main() {
       <h1>Fullstack Developer</h1>
       <p className="description tagline">
         Currently locatated in Algeria, I love building{" "}
-        <span className="green">interactive</span>, digital experiences on the
-        web, mobile, and desktop.
+        <span className="green">interactive</span>, digital experiences on web,
+        mobile, and desktop.
       </p>
       <button>let's get in touch!</button>
       <ScrollIndicator />
