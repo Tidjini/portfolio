@@ -13,8 +13,8 @@ function ToolsElement({ title, img }) {
         width: 150,
       }}
     >
-      <img src={img} style={{ width: 72, height: 72, objectFit: "contain" }} />
-      <h3 className="wid-title">{title}</h3>
+      <img src={img} style={{ width: 54, height: 54, objectFit: "contain" }} />
+      <h3 style={{ fontSize: 12, fontWeight: 600 }}>{title}</h3>
     </div>
   );
 }
