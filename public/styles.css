@@ -346,21 +346,14 @@ button:hover::before {
 /**SHADOW TITLE**/
 
 /**WHAT I DO ELEMENTS**/
-.wid-container{
-  width: 90%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 16px;
-  margin: -50px auto 0 auto;
-}
+
 .wid-element{
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 200px; 
-  height: 200px;
+  width: 180px; 
+  height: 180px;
   padding: 16px;
   text-align: center;
   border: 1px solid #808184;
@@ -370,18 +363,13 @@ button:hover::before {
 }
 
 
-.wid-container .active{
-  background-color: #15c498;
-  border: 1px solid #15c498;
-  justify-content: center;
-}
 
 .wid-img{
-  width: 96px;
-  height: 96px; 
+  width: 72px;
+  height: 72px; 
 }
 
 .wid-title{
   margin-top: 16px;
-  font-size: 1.2em;
+  font-size: 1.1em;
 }
