@@ -328,7 +328,6 @@ button:hover::before {
   width: fit-content;
   margin: 0 auto;
   text-align: center;
-
 }
 
 .shadow-title .shadow{
@@ -349,10 +348,11 @@ button:hover::before {
 /**WHAT I DO ELEMENTS**/
 .wid-container{
   width: 90%;
-  margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  gap: 16px;
+  margin: -50px auto 0 auto;
 }
 .wid-element{
   position: relative;
@@ -366,31 +366,13 @@ button:hover::before {
   border: 1px solid #808184;
   border-radius: 12px;
   cursor: pointer;
-  margin: 15px;
 
-}
-.wid-element::before  {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  height: 0;
-  background: #15c49850;
-  transition: height 0.6s ease;
-  border-radius: 12px;
-  width: 100%;
-  z-index: -1;
-}
-
-.wid-element:hover::before {
-  height: 100%;
 }
 
 
 .wid-container .active{
   background-color: #15c498;
   border: 1px solid #15c498;
-
   justify-content: center;
 }
 
