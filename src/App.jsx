@@ -2,6 +2,7 @@ import React from "react";
 import Navbar from "./Navbar.jsx";
 import Main from "./Main.jsx";
 import Skills from "./Skills.jsx";
+import WhatIdo from "./WhatIdo.jsx";
 
 export default function App() {
   return (
@@ -14,6 +15,7 @@ export default function App() {
       <Navbar />
       <Main />
       <Skills />
+      <WhatIdo />
     </div>
   );
 }

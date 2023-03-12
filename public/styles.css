@@ -322,3 +322,23 @@ button:hover::before {
     transform: translate(0, 0);
   }
 }
+
+
+/**Shadow title**/
+.shadow-title{
+  position: relative;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.shadow-title .shadow{
+  font-size: 8.8em;
+  color: #808184;
+  opacity: .1;
+}
+.shadow-title .title{
+  position: absolute;
+  font-size: 4.1em;
+  left: 30%;
+  top: 10%;
+}
