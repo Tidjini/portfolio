@@ -343,3 +343,32 @@ button:hover::before {
   width: 100%;
   text-align: center;
 }
+
+/**SHADOW TITLE**/
+
+/**WHAT I DO ELEMENTS**/
+.wid-container{
+  width: 90%;
+  margin: 0 auto;
+}
+.wid-element{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 200px; 
+  height: 200px;
+  padding: 16px;
+  text-align: center;
+  border: 1px solid #808184;
+  border-radius: 12px;
+}
+
+.wid-img{
+  width: 96px;
+  height: 96px; 
+}
+
+.wid-title{
+  margin-top: 16px;
+  font-size: 1.2em;
+}

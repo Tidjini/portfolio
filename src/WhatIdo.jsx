@@ -9,12 +9,20 @@ function ShadowTitle({ title }) {
   );
 }
 
+function WidElement({ title, picture }) {
+  <li></li>;
+}
+
 export default function WhatIdo() {
   return (
     <div>
       <ShadowTitle title="What I do" />
-      <ShadowTitle title="Tools" />
-      <ShadowTitle title="Recent Works" />
+      <ul className="wid-container">
+        <li className="wid-element">
+          <img src="assets/what/requirements.png" className="wid-img" />
+          <h3 className="wid-title">Define Needs & Requirements</h3>
+        </li>
+      </ul>
     </div>
   );
 }
