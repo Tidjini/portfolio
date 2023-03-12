@@ -51,7 +51,7 @@ body {
   border-radius: 5px;
   padding: 7px 15px;
   text-transform: uppercase;
-  
+  width: fit-content;
 }
 
 .download::before {

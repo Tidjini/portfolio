@@ -1,17 +1,18 @@
-import Grid from "@mui/material/Grid";
+import Hidden from "@mui/material/Hidden";
 import React from "react";
 
 export default function Navbar() {
   return (
-    <header>
-      <Grid container spacing={2} alignItems="center">
-        <Grid item xs={6}>
-          <a href="#" id="logo">
-            <span className="green">ti</span>djini.messaou
-            <span className="green">di</span>.com
-          </a>
-        </Grid>
-        <Grid container item xs={6}>
+    <header className="flex-center">
+      <div className="header-section">
+        <a href="#" id="logo">
+          <span className="green">ti</span>djini.messaou
+          <span className="green">di</span>.com
+        </a>
+      </div>
+
+      <Hidden mdDown>
+        <nav className="header-section">
           <ul className="flex-center">
             <li>
               <a href="#about" className="nav-item active">
@@ -38,8 +39,8 @@ export default function Navbar() {
               </a>
             </li>
           </ul>
-        </Grid>
-      </Grid>
+        </nav>
+      </Hidden>
     </header>
   );
 }
