@@ -10,6 +10,7 @@ function WidElement({ title, image, active }) {
   );
 }
 
+//what i do comment
 export default function WhatIdo() {
   return (
     <div>
