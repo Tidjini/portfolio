@@ -3,6 +3,7 @@ import Navbar from "./Navbar.jsx";
 import Main from "./Main.jsx";
 import Skills from "./Skills.jsx";
 import WhatIdo from "./WhatIdo.jsx";
+import Tools from "./Tools.jsx";
 
 export default function App() {
   return (
@@ -16,6 +17,7 @@ export default function App() {
       <Main />
       <Skills />
       <WhatIdo />
+      <Tools />
     </div>
   );
 }

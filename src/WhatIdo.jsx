@@ -1,13 +1,5 @@
 import React from "react";
-
-function ShadowTitle({ title }) {
-  return (
-    <div className="shadow-title">
-      <h1 className="shadow">{title}</h1>
-      <h1 className="title">{title}</h1>
-    </div>
-  );
-}
+import ShadowTitle from "./components/ShadowTitle.jsx";
 
 function WidElement({ title, image, active }) {
   return (
