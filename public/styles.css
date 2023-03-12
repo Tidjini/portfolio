@@ -162,9 +162,7 @@ header {
   align-items: center;
 }
 
-.skills-section {
-  width: 50%;
-}
+
 .skills-img{
   display: block;
   width: 50%;
@@ -329,16 +327,19 @@ button:hover::before {
   position: relative;
   width: fit-content;
   margin: 0 auto;
+  text-align: center;
+
 }
 
 .shadow-title .shadow{
-  font-size: 8.8em;
+  font-size: 6.8em;
   color: #808184;
   opacity: .1;
 }
 .shadow-title .title{
   position: absolute;
-  font-size: 4.1em;
-  left: 30%;
-  top: 10%;
+  font-size: 2.1em;
+  top: 25%;
+  width: 100%;
+  text-align: center;
 }

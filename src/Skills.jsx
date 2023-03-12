@@ -9,13 +9,17 @@ export default function Skills() {
         </h1>
         <p className="description">
           For more <span className="green">detailed</span> overview, please feel
-          free to check the tools that were used on{" "}
+          free to check the tools that were used on For more{" "}
+          <span className="green">detailed</span> overview, please feel free to
+          check the tools that were used on{" "}
+          <span className="green">detailed</span> overview, please feel free to
+          check the tools that were used on{" "}
           <span className="green-underline">a pre-project basis</span>.
         </p>
       </section>
-      <section className="skills-section">
+      {/* <section className="skills-section">
         <img src="/assets/process.png" className="skills-img"/>
-      </section>
+      </section> */}
     </div>
   );
 }
