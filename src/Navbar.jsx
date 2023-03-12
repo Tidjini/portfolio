@@ -80,7 +80,7 @@ export default function Navbar() {
           }}
         >
           <MenuItem onClick={handleClose}>
-            <a href="#about" className="nav-item active">
+            <a href="#about" className="nav-item">
               <span className="green">01.</span> About
             </a>
           </MenuItem>
