@@ -7,7 +7,7 @@ body {
   background-color: #141419;
   color: white;
   margin: 0 auto;
-  padding: 20px;
+  padding: 0 20px;
   font-size: 0.9em;
   max-width: 1200px;
   /* overflow: hidden; */
@@ -94,9 +94,9 @@ body {
   transform: rotate(45deg);
 }
 
-header {
+/* header {
   margin: 10px auto;
-}
+} */
 
 .header-section {
   width: 50%;

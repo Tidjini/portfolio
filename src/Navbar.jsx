@@ -17,7 +17,19 @@ export default function Navbar() {
   };
 
   return (
-    <header className="flex-center">
+    <header
+      className="flex-center"
+      style={{
+        // position: "fixed",
+        // top: 0,
+        // overflow: "hidden",
+        maxWidth: 1200,
+        width: "100%",
+        zIndex: 5,
+        margin: "0 auto",
+        padding: "10px 25px 10px 0",
+      }}
+    >
       <div className="header-section">
         <a href="#" id="logo">
           <span className="green">ti</span>djini.messaou
