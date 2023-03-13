@@ -17,8 +17,8 @@ export default function App() {
       <Main />
       <Skills />
       <WhatIdo />
-      <Tools />
       {/* 
+      <Tools />
       
        */}
     </div>

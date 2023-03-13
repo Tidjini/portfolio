@@ -6,8 +6,10 @@
 body {
   background-color: #141419;
   color: white;
-  margin: 20px;
+  margin: 0 auto;
+  padding: 20px;
   font-size: 0.9em;
+  max-width: 1200px;
   /* overflow: hidden; */
 }
 
@@ -358,13 +360,12 @@ button:hover::before {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 180px; 
+  max-width: 180px; 
   height: 180px;
   padding: 16px;
   text-align: center;
   border: 1px solid #808184;
   border-radius: 12px;
-  cursor: pointer;
 
 }
 
