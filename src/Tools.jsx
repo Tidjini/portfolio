@@ -18,6 +18,7 @@ function ToolsElement({ title, img }) {
     </div>
   );
 }
+
 export default function Tools() {
   return (
     <div>

@@ -4,6 +4,7 @@ import Main from "./Main.jsx";
 import Skills from "./Skills.jsx";
 import WhatIdo from "./WhatIdo.jsx";
 import Tools from "./Tools.jsx";
+import CurrentSkills from "./CurrentSkills.jsx";
 
 export default function App() {
   return (
@@ -17,6 +18,7 @@ export default function App() {
       <Main />
       <Skills />
       <WhatIdo />
+      <CurrentSkills />
       {/* 
       <Tools />
       
