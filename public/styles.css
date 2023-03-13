@@ -12,8 +12,8 @@ body {
 
 /* background-color: #edf2f4;
   color: #2b2d42; */
-  /* background-color: #141419;
-  color: white; */
+  background-color: #141419;
+  color: white;
   margin: 0 auto;
   padding: 0 20px;
   font-size: 0.9em;
@@ -47,6 +47,9 @@ body {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+}
+.nav{
+
 }
 
 .download {
@@ -102,13 +105,26 @@ body {
   transform: rotate(45deg);
 }
 
-/* header {
-  margin: 10px auto;
-} */
-
-.header-section {
-  width: 50%;
+header {
+    max-width: 1200;
+    width: 100%;
+    z-index: 5;
+    margin: 0 auto;
+    padding: 10px 25px 10px 0;
 }
+
+.nav{
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu-icon{
+   color: white; 
+}
+
 
 #logo {
   max-width: 180px;
@@ -117,6 +133,8 @@ body {
   text-decoration: none;
   font-size: 1.1em;
   font-weight: 600;
+  width: 50%;
+
 }
 
 .nav-item {

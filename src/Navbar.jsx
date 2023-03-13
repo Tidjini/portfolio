@@ -17,55 +17,39 @@ export default function Navbar() {
   };
 
   return (
-    <header
-      className="flex-center"
-      style={{
-        // position: "fixed",
-        // top: 0,
-        // overflow: "hidden",
-        maxWidth: 1200,
-        width: "100%",
-        zIndex: 5,
-        margin: "0 auto",
-        padding: "10px 25px 10px 0",
-      }}
-    >
-      <div className="header-section">
-        <a href="#" id="logo">
-          <span className="green">ti</span>djini.messaou
-          <span className="green">di</span>.com
-        </a>
-      </div>
+    <header className="flex-center">
+      <a href="#" id="logo">
+        <span className="green">ti</span>djini.messaou
+        <span className="green">di</span>.com
+      </a>
 
       <Hidden mdDown>
-        <nav className="header-section">
-          <ul className="flex-center">
-            <li>
-              <a href="#about" className="nav-item active">
-                <span className="green">01.</span> About
-              </a>
-            </li>
-            <li>
-              <a href="#projects" className="nav-item">
-                <span className="green">02.</span> Projects
-              </a>
-            </li>
+        <ul className="nav">
+          <li>
+            <a href="#about" className="nav-item active">
+              <span className="green">01.</span> About
+            </a>
+          </li>
+          <li>
+            <a href="#projects" className="nav-item">
+              <span className="green">02.</span> Projects
+            </a>
+          </li>
 
-            <li>
-              <a href="#contacts" className="nav-item">
-                <span className="green">03.</span> Contacts
-              </a>
-            </li>
-            <li>
-              <a href="#cv" className="download">
-                download CV{" "}
-                <span className="open-box">
-                  <span className="arrow"></span>
-                </span>
-              </a>
-            </li>
-          </ul>
-        </nav>
+          <li>
+            <a href="#contacts" className="nav-item">
+              <span className="green">03.</span> Contacts
+            </a>
+          </li>
+          <li>
+            <a href="#cv" className="download">
+              download CV{" "}
+              <span className="open-box">
+                <span className="arrow"></span>
+              </span>
+            </a>
+          </li>
+        </ul>
       </Hidden>
       <Hidden mdUp>
         <IconButton
@@ -75,10 +59,10 @@ export default function Navbar() {
           aria-expanded={open ? "true" : undefined}
           onClick={handleClick}
         >
-          <MenuIcon style={{ color: "white" }}></MenuIcon>
+          <MenuIcon className="menu-icon"></MenuIcon>
         </IconButton>
         <Menu
-          id="men"
+          id="menu"
           anchorEl={anchorEl}
           open={open}
           onClose={handleClose}
