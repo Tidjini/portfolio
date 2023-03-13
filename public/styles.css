@@ -1,5 +1,6 @@
 :root{
-  --background-color: #;
+  --background-color: #141419;
+  color: white;
 }
 
 * {
@@ -8,17 +9,20 @@
   font-family: Sono, "Tilt Neon";
 }
 
-body {
-
-/* background-color: #edf2f4;
-  color: #2b2d42; */
-  background-color: #141419;
-  color: white;
+body{
   margin: 0 auto;
   padding: 0 20px;
   font-size: 0.9em;
   max-width: 1200px;
   /* overflow: hidden; */
+}
+body.light {
+  background-color: #edf2f4;
+  color: #2b2d42;
+}
+body.dark{
+  background-color: #141419;
+  color: white;
 }
 
 /* Style the scrollbar */
