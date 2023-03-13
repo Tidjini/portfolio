@@ -1,11 +1,19 @@
+:root{
+  --background-color: #;
+}
+
 * {
   box-sizing: border-box;
   list-style: none;
   font-family: Sono, "Tilt Neon";
 }
+
 body {
-  background-color: #141419;
-  color: white;
+
+/* background-color: #edf2f4;
+  color: #2b2d42; */
+  /* background-color: #141419;
+  color: white; */
   margin: 0 auto;
   padding: 0 20px;
   font-size: 0.9em;

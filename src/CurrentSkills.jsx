@@ -18,18 +18,19 @@ function Skill({ img, name, percent, color, active }) {
         alt="tech-icon"
         src={img}
         style={{
-          width: 96,
-          height: 96,
+          width: 72,
+          height: 72,
           objectFit: "contain",
           filter: active ? "none" : "grayscale(100%)",
         }}
       />
       <h1
         style={{
-          fontSize: 18,
+          fontSize: 17,
           color: "#FFF",
           fontWeight: "400",
           textTransform: "uppercase",
+          marginTop: 20,
         }}
       >
         {name}
@@ -52,7 +53,7 @@ function Skill({ img, name, percent, color, active }) {
             display: "flex",
             alignItems: "center",
             justifyContent: "center",
-            margin: "0 0 50px 0",
+            margin: "0 0 70px 0",
           }}
         >
           <h1 style={{ fontSize: 18, fontWeight: "500", color }}>
@@ -139,15 +140,6 @@ export default function CurrentSkills() {
             active
           />
         </Grid>
-        <Grid item {...props}>
-          <Skill
-            img="assets/tools/dbforge.png"
-            name="dbForge"
-            percent={20}
-            color="#ffab00"
-            active
-          />
-        </Grid>
       </Grid>
       <ShadowTitle title="Worked with" />
       <Grid
@@ -196,7 +188,7 @@ export default function CurrentSkills() {
             img="assets/frameworks/android.png"
             name="Android SDK"
             percent={70}
-            color="#a1fcdf"
+            color="#ffb703"
           />
         </Grid>
         <Grid item {...props}>
@@ -207,7 +199,14 @@ export default function CurrentSkills() {
             color="#b1e9ff"
           />
         </Grid>
-
+        <Grid item {...props}>
+          <Skill
+            img="assets/tools/dbforge.png"
+            name="dbForge"
+            percent={20}
+            color="#ffab00"
+          />
+        </Grid>
         <Grid item {...props}>
           <Skill
             img="assets/tools/jetbrains-rider.png"

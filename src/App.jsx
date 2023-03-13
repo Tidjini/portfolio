@@ -19,10 +19,6 @@ export default function App() {
       <Skills />
       <WhatIdo />
       <CurrentSkills />
-      {/* 
-      <Tools />
-      
-       */}
     </div>
   );
 }
