@@ -16,9 +16,7 @@ body.dark {
   font-family: Sono, "Tilt Neon";
 }
 
-
-
-body{
+body {
   background-color: var(--background-color);
   color: var(--color);
   margin: 0 auto;
@@ -27,7 +25,6 @@ body{
   max-width: 1200px;
   /* overflow: hidden; */
 }
-
 
 /* Style the scrollbar */
 ::-webkit-scrollbar {
@@ -56,12 +53,10 @@ body{
   justify-content: space-between;
   align-items: center;
 }
-.nav{
-
+.nav {
 }
 
 .download {
-  
   position: relative;
   display: flex;
   align-items: center;
@@ -92,7 +87,7 @@ body{
   width: 100%;
 }
 
-.open-box{
+.open-box {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -102,7 +97,6 @@ body{
   border-bottom: 1.5px solid var(--color);
   margin-left: 8px;
   margin-top: -5px;
-  
 }
 .arrow {
   display: block;
@@ -113,17 +107,16 @@ body{
   transform: rotate(45deg);
 }
 
-
 /**Navbar**/
 header {
-    max-width: 1200;
-    width: 100%;
-    z-index: 5;
-    margin: 0 auto;
-    padding: 10px 25px 10px 0;
+  max-width: 1200;
+  width: 100%;
+  z-index: 5;
+  margin: 0 auto;
+  padding: 10px 25px 10px 0;
 }
 
-.nav{
+.nav {
   width: 50%;
   display: flex;
   flex-direction: row;
@@ -131,10 +124,9 @@ header {
   align-items: center;
 }
 
-.menu-icon{
-   color: var(--color); 
+.menu-icon {
+  color: var(--color);
 }
-
 
 #logo {
   max-width: 180px;
@@ -144,7 +136,6 @@ header {
   font-size: 1.1em;
   font-weight: 600;
   width: 50%;
-
 }
 
 .nav-item {
@@ -202,13 +193,11 @@ header {
   align-items: center;
 }
 
-
-.skills-img{
+.skills-img {
   display: block;
   width: 50%;
   margin: 0 auto;
 }
-
 
 .skills-left-section .description {
   font-size: 1.4em;
@@ -361,66 +350,59 @@ button:hover::before {
   }
 }
 
-
 /**Shadow title**/
-.shadow-title{
+.shadow-title {
   position: relative;
   width: fit-content;
   text-align: center;
   text-transform: capitalize;
   margin: 0 auto;
-
 }
 
-.shadow-title .shadow{
+.shadow-title .shadow {
   font-size: 6.8em;
   color: #808184;
-  opacity: .1;
+  opacity: 0.1;
 }
-.shadow-title .title{
+.shadow-title .title {
   position: absolute;
   font-size: 2.1em;
   top: 25%;
   width: 100%;
   text-align: center;
-
 }
 
 /**SHADOW TITLE**/
 
 /**WHAT I DO ELEMENTS**/
 
-.wid-contianer{
-  padding: 0px; 
+.wid-contianer {
+  padding: 0px;
   margin-top: -70px;
 }
-.wid-element{
+.wid-element {
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  max-width: 160px; 
+  max-width: 160px;
   height: 160px;
   padding: 16px;
   text-align: center;
   border: 1px solid #808184;
   border-radius: 12px;
-
 }
 
-
-
-.wid-img{
+.wid-img {
   width: 72px;
-  height: 72px; 
+  height: 72px;
 }
 
-.wid-title{
+.wid-title {
   margin-top: 16px;
   font-size: 1.1em;
 }
-
 
 /* 
 .wid-element::before {
@@ -439,3 +421,26 @@ button:hover::before {
 .wid-element:hover::before {
   width: 100%;
 } */
+
+/**skills**/
+
+.skill-item {
+  position: relative;
+  height: 156px;
+  width: 156px;
+  text-align: center;
+}
+
+.skill-item-img {
+  width: 64px;
+  height: 64px;
+  object-fit: contain;
+}
+
+.skill-item-name {
+  font-size: 1.2em;
+  color: #fff;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-top: 20px;
+}

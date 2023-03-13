@@ -6,35 +6,16 @@ import { useBreakPoints } from "./hooks/useWindowSize";
 
 function Skill({ img, name, percent, color, active }) {
   return (
-    <div
-      style={{
-        position: "relative",
-        height: 156,
-        width: 156,
-        textAlign: "center",
-      }}
-    >
+    <div className="skill-item">
       <img
         alt="tech-icon"
         src={img}
+        className="skill-item-img"
         style={{
-          width: 72,
-          height: 72,
-          objectFit: "contain",
           filter: active ? "none" : "grayscale(100%)",
         }}
       />
-      <h1
-        style={{
-          fontSize: 17,
-          color: "#FFF",
-          fontWeight: "400",
-          textTransform: "uppercase",
-          marginTop: 20,
-        }}
-      >
-        {name}
-      </h1>
+      <h1 className="skill-item-name">{name}</h1>
 
       <div
         style={{
@@ -46,17 +27,17 @@ function Skill({ img, name, percent, color, active }) {
         <div
           style={{
             border: `3px solid ${color}`,
-            backgroundColor: `${color}40`,
-            width: 64,
-            height: 64,
-            borderRadius: 32,
+            backgroundColor: `${color}60`,
+            width: 48,
+            height: 48,
+            borderRadius: 24,
             display: "flex",
             alignItems: "center",
             justifyContent: "center",
-            margin: "0 0 70px 0",
+            margin: "0 20px 70px 0",
           }}
         >
-          <h1 style={{ fontSize: 18, fontWeight: "500", color }}>
+          <h1 style={{ fontSize: 16, fontWeight: "500", color }}>
             {percent + "%"}
           </h1>
         </div>
