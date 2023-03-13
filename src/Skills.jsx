@@ -5,21 +5,22 @@ export default function Skills() {
     <div id="skills-tools">
       <section className="skills-section">
         <h1>
-          <span className="green">Skills</span> and tools
+          <span className="green">Highlights</span> and Summary
         </h1>
         <p className="description">
-          For more <span className="green">detailed</span> overview, please feel
-          free to check the tools that were used on For more{" "}
-          <span className="green">detailed</span> overview, please feel free to
-          check the tools that were used on{" "}
-          <span className="green">detailed</span> overview, please feel free to
-          check the tools that were used on{" "}
-          <span className="green-underline">a pre-project basis</span>.
+          I'm a <span className="green">developer</span>, sepecializes in
+          creating web applications, using{" "}
+          <span className="green">
+            <b>Python</b>
+          </span>{" "}
+          with <b>Django</b> and <b>React</b>. I've worked on various projects
+          over the years. Currently, I'm fascinating by the potential of{" "}
+          <span className="green">
+            <b>AR/VR</b>
+          </span>
+          .
         </p>
       </section>
-      {/* <section className="skills-section">
-        <img src="/assets/process.png" className="skills-img"/>
-      </section> */}
     </div>
   );
 }
