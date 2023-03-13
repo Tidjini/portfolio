@@ -9,7 +9,7 @@ const props = {
   md: 3,
   lg: 2,
 };
-function WidElement({ title, image, active, description }) {
+function WidElement({ title, subtitle, image, active, description }) {
   const [display, setDisplay] = React.useState(false);
   const onMouseEnter = React.useCallback((event) => {
     // setTimeout(() => {
@@ -38,6 +38,7 @@ function WidElement({ title, image, active, description }) {
         >
           <img src={image} className="wid-img" />
           <h3 className="wid-title">{title}</h3>
+          <p style={{ marginTop: -15, fontSize: 12 }}>{subtitle}</p>
         </div>
         <div
           style={{
@@ -80,6 +81,7 @@ export default function WhatIdo() {
           <WidElement
             image="assets/what/requirements.png"
             title="Requirements"
+            subtitle="gathering"
           />
         </Grid>
         <Grid item {...props}>
