@@ -9,18 +9,55 @@ const props = {
   md: 3,
   lg: 2,
 };
-function WidElement({ title, image, active }) {
+function WidElement({ title, image, active, description }) {
+  const [display, setDisplay] = React.useState(false);
+  const onMouseEnter = React.useCallback((event) => {
+    // setTimeout(() => {
+    //   setDisplay(true);
+    // }, 300);
+  }, []);
+  const onMouseLeave = React.useCallback((event) => {
+    // setDisplay(false);
+  }, []);
+
   return (
-    <div
-      className="wid-element"
-      style={{
-        backgroundColor: active ? "#15c498" : "transparent",
-        borderColor: active ? "#15c498" : "#808184",
-      }}
-    >
-      <img src={image} className="wid-img" />
-      <h3 className="wid-title">{title}</h3>
-    </div>
+    <>
+      <div
+        className="wid-element"
+        style={{
+          backgroundColor: active ? "#15c498" : "transparent",
+          borderColor: active ? "#15c498" : "#808184",
+        }}
+        onMouseEnter={onMouseEnter}
+        onMouseLeave={onMouseLeave}
+      >
+        <div
+          style={{
+            display: display ? "none" : "block",
+          }}
+        >
+          <img src={image} className="wid-img" />
+          <h3 className="wid-title">{title}</h3>
+        </div>
+        <div
+          style={{
+            display: display ? "block" : "none",
+            zIndex: 2,
+          }}
+        >
+          <p style={{ color: "#0d2d45" }}>{description}</p>
+        </div>
+      </div>
+      {/* <div
+        className="wid-element"
+        style={{
+          borderColor: active ? "#15c498" : "#808184",
+          display: display ? "block" : "none",
+        }}
+      >
+        <h3 style={{ zIndex: 2 }}>{title}</h3>
+      </div> */}
+    </>
   );
 }
 
@@ -43,27 +80,20 @@ export default function WhatIdo() {
         <Grid item {...props}>
           <WidElement
             image="assets/what/requirements.png"
-            title="Define Needs & Requirements"
+            title="Requirements"
           />
         </Grid>
         <Grid item {...props}>
-          <WidElement
-            image="assets/what/modeling.png"
-            title="Modeling & Conception"
-          />
+          <WidElement image="assets/what/modeling.png" title="Desing" />
         </Grid>
         <Grid item {...props}>
-          <WidElement
-            image="assets/what/dev.png"
-            title="Coding & Developing"
-            active
-          />
+          <WidElement image="assets/what/dev.png" title="Coding" active />
         </Grid>
         <Grid item {...props}>
           <WidElement image="assets/what/test.png" title="Testing" />
         </Grid>
         <Grid item {...props}>
-          <WidElement image="assets/what/deploy.png" title="Deploy & Deliver" />
+          <WidElement image="assets/what/deploy.png" title="Deploy" />
         </Grid>
       </Grid>
     </div>

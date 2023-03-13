@@ -360,8 +360,9 @@ button:hover::before {
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 180px; 
-  height: 180px;
+  justify-content: center;
+  max-width: 160px; 
+  height: 160px;
   padding: 16px;
   text-align: center;
   border: 1px solid #808184;
@@ -380,3 +381,22 @@ button:hover::before {
   margin-top: 16px;
   font-size: 1.1em;
 }
+
+
+/* 
+.wid-element::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background: #15c498;
+  transition: width 0.6s ease;
+  width: 0;
+  z-index: 1;
+  border-radius: 12px;
+}
+
+.wid-element:hover::before {
+  width: 100%;
+} */
