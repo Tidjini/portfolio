@@ -85,16 +85,28 @@ export default function WhatIdo() {
           />
         </Grid>
         <Grid item {...props}>
-          <WidElement image="assets/what/modeling.png" title="Desing" />
+          <WidElement
+            image="assets/what/modeling.png"
+            title="Desing"
+            subtitle="(Conception)"
+          />
         </Grid>
         <Grid item {...props}>
           <WidElement image="assets/what/dev.png" title="Coding" active />
         </Grid>
         <Grid item {...props}>
-          <WidElement image="assets/what/test.png" title="Testing" />
+          <WidElement
+            image="assets/what/test.png"
+            title="Testing"
+            subtitle="(TDD Approach)"
+          />
         </Grid>
         <Grid item {...props}>
-          <WidElement image="assets/what/deploy.png" title="Deploy" />
+          <WidElement
+            image="assets/what/deploy.png"
+            title="Deploy"
+            subtitle="(deliver)"
+          />
         </Grid>
       </Grid>
     </div>
