@@ -5,7 +5,7 @@ export default function Skills() {
     <div id="skills-tools">
       <section className="skills-section">
         <h1>
-          <span className="green">Highlights</span> and Summary
+          <span className="green">High</span>lights
         </h1>
         <p className="description">
           I'm a <span className="green">developer</span>, sepecializes in
