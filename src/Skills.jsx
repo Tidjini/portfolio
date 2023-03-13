@@ -8,17 +8,23 @@ export default function Skills() {
           <span className="green">High</span>lights
         </h1>
         <p className="description">
-          I'm a <span className="green">developer</span>, sepecializes in
-          creating web applications, using{" "}
+          I'm a{" "}
           <span className="green">
-            <b>Python</b>
-          </span>{" "}
-          with <b>Django</b> and <b>React</b>. I've worked on various projects
-          over the years. Currently, I'm fascinating by the potential of{" "}
+            <b>web application developer</b>
+          </span>
+          , working with <b>Django</b> and <b>React</b>. I've worked on several
+          projects over the years. Currently, I'm fascinating by the potential
+          of{" "}
           <span className="green">
             <b>AR/VR</b>
-          </span>
-          .
+          </span>{" "}
+          as well as{" "}
+          <span className="green">
+            <b>AI</b>
+          </span>{" "}
+          on the web. I strive to stay updated with the latest technologies and
+          developments in these areas to further enhance my knowledge and
+          expertise.
         </p>
       </section>
     </div>
