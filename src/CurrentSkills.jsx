@@ -75,7 +75,7 @@ export default function CurrentSkills() {
   const type = useBreakPoints();
   return (
     <div>
-      <ShadowTitle title="Skils" />
+      <ShadowTitle title="Skills" />
       <Grid
         container
         style={{

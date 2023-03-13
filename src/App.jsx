@@ -14,7 +14,7 @@ export default function App() {
         <div className="wave -two"></div>
         <div className="wave -three"></div>
       </div>
-      <Navbar />
+      <Navbar mode="light" />
       <Main />
       <Skills />
       <WhatIdo />
