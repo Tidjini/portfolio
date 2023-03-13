@@ -71,8 +71,7 @@ export default function WhatIdo() {
       <Grid
         container
         style={{
-          marginTop: "-70px",
-          alignSelf: "center",
+          margin: "-70px auto 0 auto",
         }}
         justifyContent={breakPoints.includes(type) ? "flex-start" : "center"}
         spacing={1}
