@@ -1,6 +1,13 @@
-:root{
+:root {
+  --background-color: #edf2f4;
+  --color: #2b2d42;
+  --donwload-hover-back: white;
+}
+
+body.dark {
   --background-color: #141419;
-  color: white;
+  --color: white;
+  --donwload-hover-back: black;
 }
 
 * {
@@ -9,21 +16,18 @@
   font-family: Sono, "Tilt Neon";
 }
 
+
+
 body{
+  background-color: var(--background-color);
+  color: var(--color);
   margin: 0 auto;
   padding: 0 20px;
   font-size: 0.9em;
   max-width: 1200px;
   /* overflow: hidden; */
 }
-body.light {
-  background-color: #edf2f4;
-  color: #2b2d42;
-}
-body.dark{
-  background-color: #141419;
-  color: white;
-}
+
 
 /* Style the scrollbar */
 ::-webkit-scrollbar {
@@ -61,10 +65,10 @@ body.dark{
   position: relative;
   display: flex;
   align-items: center;
-  color: white;
+  color: var(--color);
   text-decoration: none;
   background-color: #80818450;
-  border: 1px solid white;
+  border: 1px solid var(--color);
   border-radius: 5px;
   padding: 7px 15px;
   text-transform: uppercase;
@@ -77,10 +81,10 @@ body.dark{
   top: 0;
   left: 0;
   height: 100%;
-  background-color: black;
+  background-color: var(--donwload-hover-back);
   transition: width 0.6s ease;
   width: 0;
-  color: white;
+  color: var(--color);
   z-index: -1;
 }
 
@@ -95,7 +99,7 @@ body.dark{
   align-items: center;
   width: 12px;
   height: 14px;
-  border-bottom: 1.5px solid white;
+  border-bottom: 1.5px solid var(--color);
   margin-left: 8px;
   margin-top: -5px;
   
@@ -104,11 +108,13 @@ body.dark{
   display: block;
   width: 6px;
   height: 6px;
-  border-bottom: 1px solid white;
-  border-right: 1px solid white;
+  border-bottom: 1px solid var(--color);
+  border-right: 1px solid var(--color);
   transform: rotate(45deg);
 }
 
+
+/**Navbar**/
 header {
     max-width: 1200;
     width: 100%;
@@ -126,14 +132,14 @@ header {
 }
 
 .menu-icon{
-   color: white; 
+   color: var(--color); 
 }
 
 
 #logo {
   max-width: 180px;
   cursor: pointer;
-  color: white;
+  color: var(--color);
   text-decoration: none;
   font-size: 1.1em;
   font-weight: 600;
@@ -146,7 +152,7 @@ header {
   width: auto;
   opacity: 0.7;
   cursor: pointer;
-  color: white;
+  color: var(--color);
   text-decoration: none;
   padding-bottom: 10px;
 }
@@ -157,7 +163,7 @@ header {
   top: 0;
   left: 0;
   height: 100%;
-  border-bottom: 2px solid white;
+  border-bottom: 2px solid var(--color);
   transition: width 0.6s ease;
   width: 0;
   opacity: 0.8;
@@ -171,8 +177,11 @@ header {
 }
 .nav-item.active {
   opacity: 1;
-  border-bottom: 2px solid white;
+  border-bottom: 2px solid var(--color);
 }
+
+/**Navbar**/
+
 .green {
   color: #15c498;
 }
@@ -219,7 +228,7 @@ header {
 button {
   position: relative;
   background-color: transparent;
-  color: white;
+  color: var(--color);
   font-size: 1.1em;
   font-weight: "300";
   margin-top: 20px;
@@ -327,8 +336,8 @@ button:hover::before {
 .arrow-down {
   width: 24px;
   height: 24px;
-  border-bottom: 2px solid white;
-  border-right: 2px solid white;
+  border-bottom: 2px solid var(--color);
+  border-right: 2px solid var(--color);
   border-radius: 2px;
   transform: rotate(45deg);
 }
