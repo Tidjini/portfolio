@@ -18,29 +18,15 @@ function Skill({ img, name, percent, color, active }) {
       <h1 className="skill-item-name">{name}</h1>
 
       <div
+        className="percent-container"
         style={{
-          position: "absolute",
-          bottom: 0,
-          right: 0,
+          border: `3px solid ${color}`,
+          backgroundColor: `${color}60`,
         }}
       >
-        <div
-          style={{
-            border: `3px solid ${color}`,
-            backgroundColor: `${color}60`,
-            width: 48,
-            height: 48,
-            borderRadius: 24,
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
-            margin: "0 20px 70px 0",
-          }}
-        >
-          <h1 style={{ fontSize: 16, fontWeight: "500", color }}>
-            {percent + "%"}
-          </h1>
-        </div>
+        <h1 style={{ fontSize: 16, fontWeight: "500", color }}>
+          {percent + "%"}
+        </h1>
       </div>
     </div>
   );
