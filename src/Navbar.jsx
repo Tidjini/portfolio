@@ -5,7 +5,9 @@ import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
 import MenuIcon from "@mui/icons-material/Menu";
 
-export default function Navbar() {
+const colors = ["#edf2f4", "#141419"];
+
+export default function Navbar({ mode }) {
   const [anchorEl, setAnchorEl] = React.useState(null);
   const open = Boolean(anchorEl);
   const handleClick = (event) => {
@@ -71,7 +73,7 @@ export default function Navbar() {
           }}
           PaperProps={{
             style: {
-              backgroundColor: "#141419",
+              backgroundColor: mode === "dark" ? colors[1] : colors[0],
             },
           }}
         >
